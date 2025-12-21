@@ -4,8 +4,7 @@
   "version": "4.1.0",
   "minAppVersion": "0.10.7",
   "description": "This plugin uploads images from your clipboard by PicGo",
-  "author": "renmu",
-  "authorUrl": "https://github.com/renmu123/obsidian-image-auto-upload-plugin",
-  "isDesktopOnly": false,
-  "fundingUrl": "https://afdian.com/a/renmu123"
+  "author": "sanfordliao",
+  "authorUrl": "https://github.com/sanfordliao/obsidian-image-auto-upload-plugin",
+  "isDesktopOnly": false
 }

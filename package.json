@@ -6,7 +6,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "rollup --config rollup.config.js -w",
-    "build": "pnpm run typecheck && rollup --config rollup.config.js",
+    "build": "pnpm run typecheck && NODE_ENV=production rollup --config rollup.config.js",
     "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
     "test": "vitest run"
   },
@@ -20,6 +20,7 @@
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.1",
     "@types/electron": "^1.6.12",
     "@types/node": "20.17.6",
@@ -34,7 +35,9 @@
     "vitest": "^2.1.5"
   },
   "dependencies": {
-    "image-type": "^5.2.0"
+    "image-type": "^5.2.0",
+    "picgo": "^1.6.0",
+    "proxy-agent": "^6.5.0"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }
